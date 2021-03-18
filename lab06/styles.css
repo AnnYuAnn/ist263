@@ -1,0 +1,14 @@
+
+/* Change the font of the body selector */
+body{font-family:'Courier New', Courier, monospace;}
+
+/* Change the color by grouped selectors */
+h1, h2{color: cadetblue;}
+
+/* Change the set of elements using class selector */
+.evenrow{background-color:cadetblue;}
+
+/* Change the heading font size */
+h1 {font-size: 2.5em;}
+h2 {font-size: 1.5em;}
+
