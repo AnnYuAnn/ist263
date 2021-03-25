@@ -1,0 +1,32 @@
+h1 {color: #ff0000;}
+
+a:link {color: #00ff00;}
+a:visited {color: #0000ff;}
+a:hover {color: #999999;}
+/* hex color requires the pound sign */
+/* psuedo selectors need a colon between selector and its state */
+
+.oneoff:hover {
+    color: #0283bf;
+    background-color: #5d02bf;
+}
+/* you can use any selector with psuedo selectors */
+body {
+    background-image: url(./images/LI-Logo.png);
+    background-color: #ebebda;
+    background-size: 200px;
+    /*size the background image */
+}
+/* file path for background is from the css file */
+/* don't forget the utl and paranthesis for background image */
+
+p {
+    background-color: #ffffff;
+    /* to calculate width: width of box + padding x 2 + border x 2 + margon x 2 */
+    /* for our box: 300 px * 20 px + 10 px + 100 px = 450  pixels */
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid #000000;
+    /* this is a combo property value, it's documented in the css spec */
+}
