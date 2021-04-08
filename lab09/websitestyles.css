@@ -20,3 +20,11 @@ nav {background-color: #aaaaaa;
 
 nav a{color: #0066ff;}
 nav a:hover {background-color: #b3ebca;}
+
+@media only screen and (min-width: 920px){
+    body nav{size: 100%; display: inline; margin-top: auto; margin-bottom: auto;margin-left: auto;margin-right: auto;}
+}
+
+@media only screen and (max-width: 600px){
+    body nav{display: none;}
+}
