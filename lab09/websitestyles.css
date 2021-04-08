@@ -22,7 +22,6 @@ nav a{color: #0066ff;}
 nav a:hover {background-color: #b3ebca;}
 
 
-
 @media only screen and (max-width: 600px){
      span{display: none;}
      nav a{display:block; width:100%; margin-left:auto; margin-right:auto;}
