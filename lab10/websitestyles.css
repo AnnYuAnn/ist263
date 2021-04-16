@@ -1,10 +1,10 @@
 /* body background & text color */
 body { background-color: #cccaca;
-        color: #04754a;
+        color: #065061;
     }
 
 /*Set link color */
-a:link {color: #065061;}
+a:link {color: #02242c;}
 
 /*Set heading color */
 h1,h2 {color: #065061;}
@@ -19,7 +19,7 @@ nav {background-color: #cccaca;
      padding: 10px;
      margin-bottom: 30px;}
 
-nav a{color: #04754a;}
+nav a{color: #065061;}
 nav a:hover {background-color: #cc8251;}
 
 
