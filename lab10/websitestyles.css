@@ -1,0 +1,48 @@
+/* body background & text color */
+body { background-color: #aaaaaa;
+        color: #ccf2f4;}
+
+/*Set link color */
+a:link {color: #f4f9f9;}
+
+/*Set heading color */
+h1,h2 {color: #a4ebf3;}
+
+table:hover{ 
+    color: #0283bf;
+    background-color: #443d4d;
+}
+
+/*Site navigation link, highlight color, background */
+nav {background-color: #aaaaaa;
+     padding: 10px;
+     margin-bottom: 30px;}
+
+nav a{color: #0066ff;}
+nav a:hover {background-color: #b3ebca;}
+
+
+@media only screen and (max-width: 600px){
+     span{display: none;}
+     nav a{display:block; width:100%; margin-left:auto; margin-right:auto;}
+}
+
+/* Change the heading font size */
+h1 {font-size: 2.5em;}
+h2 {font-size: 1.5em;}
+
+/* Change the font of the body selector */
+body{font-family:'Courier New', Courier, monospace;}
+
+/* Skip to Content*/
+#skip {
+     position: absolute;
+     left: -999px;
+     background-color: white;
+     border: 1px solid black;
+ }
+ 
+ #skip:focus {
+     position: absolute;
+     left: 10px;
+ }
