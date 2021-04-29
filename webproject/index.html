@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="webstyle.css">
 </head>
+
+<style>
+    /* Background image */
+    body
+    {
+        background-image: url('../webproject/media/China-Briefing-Shanghai-Industry-Economics-and-Policy.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: cover;
+    }
+    footer, h1, nav, a
+    {
+        color: white;
+    }
+ </style>
 <body>
      <!-- Skip to Content-->
      <a id="skip" href="#content" tabindex="1">Skip to Content</a>
 
      <!-- Navigation-->
   <nav>
-     <a href="home.html" tabindex="2">Home</a>
+     <a href="index.html" tabindex="2">Home</a>
      <span>|</span>
      <a href="landscape.html" tabindex="3">Landscape</a>
      <span>|</span>
@@ -23,13 +39,17 @@
 <!-- Content-->
 <a id="content"></a>
 
-<h1>Shanghai</h1>
-<h2>City That Never Sleeps...</h2>
+<h1>Shanghai
+    <div id="motto">City That Never Sleeps...</div>
+</h1>
+
 
 <!-- Main part -->
-<main>
-<img src="../webproject/media/China-Briefing-Shanghai-Industry-Economics-and-Policy.jpg" alt="The Bund Night View In Shanghai">
-<img src="../webproject/media/Shanghai-City-Profile.jpg" alt="Shanghai Profile">
+<main class="homemain">
+<!-- Special Text Image -->
+<img src="../webproject/media/Introduction.png" alt = "Intro" id="intro">
+<img src="../webproject/media/Shanghai-City-Profile.jpg" alt="Shanghai Profile" id="ecn">
+
 </main>
 
 <!-- Footer-->
@@ -39,6 +59,8 @@
     "Shanghai - City that never sleeps..."
    </p>   
 </footer>
+
+
     
 </body>
 </html>
