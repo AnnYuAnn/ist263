@@ -7,9 +7,80 @@
     <link rel="stylesheet" href="webstyle.css">
 </head>
 <style>
-     .firstcolumn{float:left; margin: 20px;}
-     .secondcolumn{float:right; margin: 20px;}
+    #landscape{
+        color: #01180E;
+    }
+     body{
+        background-image: url('../webproject/media/Shanghai-scaled.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: cover;
+     }
+     .landscape{
+        width: 1300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+        background-color: cornsilk; 
+        opacity: 0.8;
+     }
+
+     
+     .firstcolumn, .secondcolumn{
+         width: auto;
+         margin-bottom: 30px; 
+         margin-top: 30px; 
+         margin-left: 30px;
+         margin-right: 30px;
+     }
+     
+     .firstcolumn{float:left;}
+     .secondcolumn {float:right;}
+
+     .moderntext, .historytext 
+     {
+         max-width: 500px;
+         font-size: 1.2em;
+     }
+     .moderntext{
+         float: left;
+         padding-left: 10px;
+         margin-left: 30px;
+    }
+     .historytext{
+         float: right;
+         padding-right: 10px;
+         margin-right: 30px;
+    }
+
      .clear{clear: both;}
+     .cleartext{clear: both;}
+
+     h3{
+         color: #6300C7;
+     }
+
+     h2{
+         margin-left: 40%;
+         margin-right: 50%;
+     }
+
+
+     @media only screen and (max-width: 600px){
+        .landscape{
+            max-width: 600px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .firstcolumn, .secondcolumn, .historytext, .moderntext{
+            float:left;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+     }
+     
 </style>
 <body>
     <!-- Skip to Content-->
@@ -29,49 +100,56 @@
 <!-- Content-->
 <a id="content"></a>
 
-<h1>Landscape In Shanghai</h1>
+<div class="introcontainer">
+<h1 id="landscape">Landscape In Shanghai</h1>
 <!--Landscape Picture-->
-<p>Ancient buildings with history and modern buildings rising from the ground carry the historical precipitation and contemporary technology of a city.
-</p>
-
+<h4>Ancient buildings with history and modern buildings rising from the ground carry the historical precipitation and contemporary technology of a city.
+</h4>
+</div>
 
 <!-- Main part -->
-<main>
+<main class="landscape">
 
 <div class="firstcolumn">
 <h2>Modern</h2>
 <h3>Shanghai Tower</h3>
 <h4>Location:</h4>
-<p>No. 501, Yincheng Middle Road, Pudong New Area, Shanghai (the intersection of Huayuanshiqiao Road)</p>
-
+<p>No. 501, Yincheng Middle Road, Pudong New Area, Shanghai</p>
 <img src="../webproject/media/ShanghaiTowerFilled..png" alt="Shanghai Tower with Data">
 </div>
 
+
 <div class="secondcolumn">
-    <h2>History</h2>
-    <h3>Shanghai Grand View Park</h3>
-    <h4>Location:</h4>
-    <p>No.701, Jinshang Road, Qingpu District, Shanghai</p>
+        <h2>History</h2>
+        <h3>Shanghai Grand View Park</h3>
+        <h4>Location:</h4>
+        <p>No.701, Jinshang Road, Qingpu District, Shanghai</p>
+        
+        <img src="../webproject/media/GrandParkFilled.png" alt="Grand Garden In Summer and Fall">
     
-    <img src="../webproject/media/GrandParkFilled.png" alt="Grand Garden In Summer and Fall">
 </div>
 
-<div class="TextPartOne">
-<p>"Shanghai Center" is divided into three themes of Shanghai Charm, Shanghai Heights, and Shanghai Center. It combines dynamic and static and the combination of virtual and reality and interprets the charm, inheritance, and development of Shanghai-style architecture through static and vibrant images. The architecture of the city can best reflect the culture of the town. Shanghai-style architectural culture is a derivative of Shanghai-style culture. Architecture has always been the most expressive part of human culture. It shows the value trends of different cultures in different periods. Tolerant, implicit, generous, and innovative Shanghai-style architecture is a unique style that can accommodate the entire architectural world. This is the legendary "scent of Shanghai."</p>
+<div class="clear"></div>
 
-<p>In the torrent of history, each era has its legendary buildings. They continue to shape the height of the city and represent the glory and classics of the past. From Shanghai Hotel, Lianyi Building, Portman Tower, Jin Mao Tower, World Financial Center to the Shanghai Center, these buildings' height is continuously updated, inheriting, and surpassing. The birth of the Shanghai Tower reached the culmination of the history of architectural development. Past and the future meet, creating the climax of the times.</p>
+<div class="moderntext">
+    <h2>Modern</h2>
+
+    <p>"Shanghai Center" is divided into three themes of Shanghai Charm, Shanghai Heights, and Shanghai Center. It combines dynamic and static and the combination of virtual and reality and interprets the charm, inheritance, and development of Shanghai-style architecture through static and vibrant images. The architecture of the city can best reflect the culture of the town. Shanghai-style architectural culture is a derivative of Shanghai-style culture. Architecture has always been the most expressive part of human culture. It shows the value trends of different cultures in different periods. Tolerant, implicit, generous, and innovative Shanghai-style architecture is a unique style that can accommodate the entire architectural world. This is the legendary "scent of Shanghai."</p>
+    
+    <p>In the torrent of history, each era has its legendary buildings. They continue to shape the height of the city and represent the glory and classics of the past. From Shanghai Hotel, Lianyi Building, Portman Tower, Jin Mao Tower, World Financial Center to the Shanghai Center, these buildings' height is continuously updated, inheriting, and surpassing. The birth of the Shanghai Tower reached the culmination of the history of architectural development. Past and the future meet, creating the climax of the times.</p>
 </div>
 
-
-<div class="TextPartTwo">
-<p>
-Shanghai Grand View Garden is a large antique garden designed according to the description of the famous "Dream of Red Mansions" in the Qing Dynasty of China.
-</p>
-<p>
-According to the novel's artistic conception and characteristics, the plant configuration of each scenic spot in Daguan Garden is designed. Yihong Siheyuan is planted with Xifu crabapple, plantain, and Podocarpus, which has the characteristics of "Yihong, fast and green." The Xiaoxiang Pavilion is produced with all kinds of bamboos, showing the artistic conception of "the tail of the phoenix has a forest, and the dragon has a brocade," showing the loneliness and willfulness of Xiao Township. Two trees were planted behind the pond of Luncui Temple. Because this tree is like a canopy, the feudal system stipulates that this tree can only be reproduced by people above level five, which means the Miao people's nobility. The yard is planted with pine trees, bamboo, plums and green maple trees, pomegranates, winter plums, etc. Miaoli's image is proud of its plum and solitary bamboo. Daoxiang Village's entrance is a garden full of melon seeds, fruits, and vegetables, showing the indifference and frugality of the owner Li Wan.
-</p>
+<div class="historytext">
+    <h2>History</h2>
+    <p>
+        Shanghai Grand View Garden is a large antique garden designed according to the description of the famous "Dream of Red Mansions" in the Qing Dynasty of China.
+    </p>
+        <p>
+        According to the novel's artistic conception and characteristics, the plant configuration of each scenic spot in Daguan Garden is designed. Yihong Siheyuan is planted with Xifu crabapple, plantain, and Podocarpus, which has the characteristics of "Yihong, fast and green." The Xiaoxiang Pavilion is produced with all kinds of bamboos, showing the artistic conception of "the tail of the phoenix has a forest, and the dragon has a brocade," showing the loneliness and willfulness of Xiao Township. Two trees were planted behind the pond of Luncui Temple. Because this tree is like a canopy, the feudal system stipulates that this tree can only be reproduced by people above level five, which means the Miao people's nobility. The yard is planted with pine trees, bamboo, plums and green maple trees, pomegranates, winter plums, etc. Miaoli's image is proud of its plum and solitary bamboo. Daoxiang Village's entrance is a garden full of melon seeds, fruits, and vegetables, showing the indifference and frugality of the owner Li Wan.
+        </p>
 </div>
 
+<div class="cleartext"></div>
 </main>
 
 <!-- Footer-->
