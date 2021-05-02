@@ -6,9 +6,24 @@
     <title>Food In Shnaghai</title>
     <link rel="stylesheet" href="webstyle.css">
     <style>
+        body{
+            background-image: url('../webproject/media/shanghai_background.gif');
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-size: cover;
+            opacity: 0.9;
+         }      
         h2{
             margin-left: 48%;
             margin-right: 50%;
+        }
+        h3
+        {
+            color: #1E448A;
+        }
+        h5{
+            font-size: medium;
+            color:#1E448A;
         }
 
         /* Draw vertical line*/
@@ -17,8 +32,43 @@
             height: 100px;
             margin-left: 50%;
             margin-right: 50%;
-            
-            }
+           }
+
+        /* draw the box */
+        .breakfast, .lunch, .dinner
+        {
+             max-width: 1400px;
+             margin-top: 50px;
+             margin-bottom: 50px;
+             margin-left: auto;
+             margin-right: auto;
+             padding-bottom: 20px;
+             background-color: cornsilk; 
+        }
+        
+        body img{
+            max-width: 1000px;
+            margin-left: 15%;
+            margin-right: 20%;
+        }
+
+        @media only screen and (max-width: 600px)
+    {
+        .landscape{
+            max-width: 600px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        body img{
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2{
+            margin-left: 45%;
+            margin-right: 45%;
+        }
+    }
     </style>
 </head>
 
@@ -47,29 +97,31 @@
 </p>
 
 <!-- Main part -->
-<main>
+<main class="food">
 <div class="vl"></div>
 
+<div class="breakfast">
 <h2>Breakfast</h2>
 <h3>Nanxiang Xiaolong</h3>
 <h4>Location:</h4>
-<p>2nd Floor, No. 6, Chengzhong Street, Jiading District, Shanghai</p>
-
-<img src="../webproject/media/NanXiangXiaoLong.jpg" alt="Original and Crab Meat Flavor NanXiang Xiaolong ">
-
+<h5>2nd Floor, No. 6, Chengzhong Street, Jiading District, Shanghai</h5>
 <p>Nanxiang Xiaolong's handicrafts were born in the tenth year of Tongzhi in the Qing Dynasty (1871). Since the filling is a secret recipe, the craftsmanship is always passed down between masters and apprentices. Chef uses refined white flour to roll the skin into thin skin. The filling is made of high-quality pork. First, boil the meat in chicken broth, then freeze and stir to keep it fresh. When filling, sprinkle a small amount of sesame paste to get the flavor. Depending on the season, add crab meal or shrimp to the filling. In the production process, the closed part of each Xiaolongbao needs to be folded 14 times, which requires a high level of technology. At the same time, the meat filling is faintly visible in the thin dough. After the dumplings are steamed in a pot, the meat's soup is wrapped in the dough, which is the most indispensable part.
 </p>
 
-<div class="vl"></div>
+<img src="../webproject/media/NanXiangXiaoLong.jpg" alt="Original and Crab Meat Flavor NanXiang Xiaolong ">
 
+</div>
+
+
+
+
+
+<div class="vl"></div>
+<div class="lunch">
 <h2>Lunch</h2>
 <h3>Ribs Rice Cake</h3>
 <h4>Location:</h4>
-<p>3rd Floor, Hongyi International Plaza, 299 Nanjing East Road, Huangpu District (near Henan Middle Road), Shanghai</p>
-
-<img src="../webproject/media/Ribs-Rice-Cake.jpg" alt="Rib Rice Cake">
-<img src="../webproject/media/Ribs-Rice-Cake-Anime.gif" alt="Rib Rice Cake With Sauce">
-
+<h5>3rd Floor, Hongyi International Plaza, 299 Nanjing East Road, Huangpu District (near Henan Middle Road), Shanghai</h5>
 <p>
     The invention of rib rice cake reflects the old Shanghainese's love for ribs. "XIAN DE LAI (meaning very delicious)" This shop has been around for nearly 50 years. When it opened a stall in an alley on the north side of Guangming Middle School, the owner might never have thought that the "brain hole" combination of tonkatsu and four rice cakes would become one of the classic delicacies representing Shanghai. In retrospect, this is simply a genius invention:
 </p>
@@ -81,16 +133,18 @@
     <li><strong>From a nutritional point of view, it can also meet protein and carbohydrate needs.</strong></li>
 </ul>
 
+<img src="../webproject/media/ribricecake_long.gif" alt="Rib Rice Cake with sauce">
+
+</div>
+
+
 <div class="vl"></div>
 
+<div class="dinner">
 <h2>Dinner</h2>
 <h3>Canton Disco</h3>
 <h4>Location:</h4>
-<p>199 Nanjing East Road 2F, Shanghai EDITION, near Henan Middle Road, Shanghai</p>
-
-<img src="../webproject/media/Roast-Angus-short-rib.png" alt="Roast Angus short rib">
-<img src="../webproject/media/Lamb-dan-dan-noodles.png" alt="Lamb dan dan noodles">
-<img src="../webproject/media/Egg-Cold-Dish.png" alt="Egg Cold Dish">
+<h5>199 Nanjing East Road 2F, Shanghai EDITION, near Henan Middle Road, Shanghai</h5>
 
 <p>
     In addition to local specialty snacks, the night view by the Huangpu River is also not to
@@ -102,6 +156,10 @@ Therefore, this restaurant located on the edge of the Bund, where you can enjoy 
 <p>
     Here are some personal favorites: <strong>rose soy sauce chicken</strong>, <strong>gourd flower</strong>, <strong>shrimp wonton</strong>.
 </p>
+
+<img src="../webproject/media/disco_long.jpg" alt="Roast Angus short rib, Lamb dan dan noodles and Egg Cold Dish ">
+
+</div>
 </main>
 
 <!-- Footer-->
