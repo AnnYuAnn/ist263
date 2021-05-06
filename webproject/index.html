@@ -6,6 +6,8 @@
     <title>Home</title>
     <link rel="stylesheet" href="webstyle.css">
     <link rel="shortcut icon" type="image/x-icon" href="../webproject/media/favicon/favicon-worldmap.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
     <style>
         /* Background image */
         body
@@ -23,10 +25,18 @@
        nav, a
         {
             color: #1B2C22;
+            font-family: 'Zilla Slab', serif;
         }
         footer
         {color: #473E00;}
 
+        #ecn{
+            display: none;
+        }
+
+        #intro{
+            display: block;
+        }
         @media only screen and (max-width: 600px){
         main img{
              max-width: 600px;;
@@ -34,6 +44,15 @@
          }
      }
      </style>
+     <script>
+         function introOff(){
+            document.getElementById('ecn').style.display = 'none';
+         }
+
+         function introOn(){
+            document.getElementById('ecn').style.display = 'block';
+         }
+     </script>
 </head>
 
 
@@ -63,8 +82,8 @@
 <!-- Main part -->
 <main class="homemain">
 <!-- Special Text Image -->
-<img src="../webproject/media/Introduction.png" alt = "Intro" id="intro">
-<img src="../webproject/media/Shanghai-City-Profile.jpg" alt="Shanghai Profile" id="ecn">
+<img src="../webproject/media/Introduction.png" alt = "Intro" id="intro" onclick="introOn();">
+<img src="../webproject/media/Shanghai-City-Profile.jpg" alt="Shanghai Profile" id="ecn" onclick="introOff();">
 
 </main>
 
