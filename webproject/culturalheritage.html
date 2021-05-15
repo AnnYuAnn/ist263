@@ -9,20 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
     <style>
-     .cultural{
-            max-width: 1200px;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 20px;
-            background-color: cornsilk; 
-        }
+     
      .text-image
      {
          display: flex;
          flex-wrap: wrap;
-         margin-left: 10%;
+         margin-left: 8%;
          margin-right: 10%;
      }
      h2
@@ -41,6 +33,10 @@
             font-family: 'Zilla Slab', serif;
         }
     
+    .picture{
+        display: flex;
+        flex:1;
+    }
 
      @media only screen and (max-width: 600px)
     {
@@ -50,7 +46,7 @@
             margin-bottom: 50px;
         }
         body img{
-            max-width: 550px;
+            max-width: 450px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -61,21 +57,30 @@
             color:#991F00;
         }
         .text-image{
-            margin-left: 1%;
+            margin-left: auto;
+            margin-right: auto;
             max-width: 550px;
         }
 
     }
 
     </style>
+    <script>
+        function menuControl(){
+            document.getElementById('menu').style.display = 'none';
+            document.getElementById('collection').style.display = 'block';
+         }
+    </script>
 </head>
 
 <body>
      <!-- Skip to Content-->
      <a id="skip" href="#content" tabindex="1">Skip to Content</a>
 
+     <svg onclick = "menuControl();"  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" id ="menu" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
      <!-- Navigation-->
-  <nav>
+<div id ="collection">
+  <nav class>
      <a href="index.html" tabindex="2">Home</a>
      <span>|</span>
      <a href="landscape.html" tabindex="3">Landscape</a>
@@ -84,6 +89,8 @@
      <span>|</span>
      <a href="culturalheritage.html" tabindex="5">Cultural Heritage</a>
  </nav>
+</div>
+
 
 <!-- Content-->
 <a id="content"></a>
@@ -96,9 +103,9 @@
 <p>
         The core is beyond material things such as skills, experience, and wisdom. Some intangible cultural heritages have no material form. They exist in people’s oral legends and expressions, in different artistic performances, and various folk customs During festivals and ceremonies.
 </p>
-<img src="../webproject/media/shanghai_final.jpg" alt="Shanghai Scenery" width=1000px>
+<img src="../webproject/media/shanghai_final.jpg" alt="Shanghai Scenery" width=1000px class="picture">
 
-<img src="../webproject/media/cultural_tag.png" alt="culture intangible heritage">
+<img src="../webproject/media/cultural_tag.png" alt="culture intangible heritage" class="picture">
 </div>
 
 <!-- Main part -->
@@ -108,8 +115,8 @@
     Shanghai Opera
 </h2>
 
-<img src="../webproject/media/shanghai-opera-episode.jpg" alt="Shanghai Opera Named Butterfly Love Episode 1">
-<img src="../webproject/media/Butterfly-Love-Ending.jpg" alt="Shanghai Opera Named Butterfly Love Ending Pose">
+<img src="../webproject/media/shanghai-opera-episode.jpg" alt="Shanghai Opera Named Butterfly Love Episode 1"  class="picture">
+<img src="../webproject/media/Butterfly-Love-Ending.jpg" alt="Shanghai Opera Named Butterfly Love Ending Pose" class="picture">
 
 
 <p>
@@ -122,7 +129,7 @@ Opera. For more than 200 years, the Shanghai Opera House's development has been 
     Living Customs in Shikumen Lanes
 </h2>
 
-<img src="../webproject/media/shikumendesign.jpg" alt="Shikumen Design">
+<img src="../webproject/media/shikumendesign.jpg" alt="Shikumen Design" class="picture">
 
 <p>
     Shikumen is a unique residential style in Shanghai, and it is also a substantial reason for
@@ -155,7 +162,7 @@ the formation of its unique lifestyle and artistic style in Shanghai. They const
     Xinghualou Cantonese Mooncake Making Skills
 </h2>
 
-<img src="../webproject/media/mooncake_long.png" alt="Xinghualou Mooncake">
+<img src="../webproject/media/mooncake_long.png" alt="Xinghualou Mooncake" class="picture">
 
 
 <p>
@@ -168,11 +175,11 @@ eating mooncakes is a Chinese's conventional food custom. Xinghualou moon cakes 
 
 
 <!-- Footer-->
-<footer>
+<footer> 
     &copy;&#50;&#48;&#50;&#49;
-    <p class="motto">
-    "Shanghai - City that never sleeps..."
-   </p>   
+    <div class="motto">
+        "Shanghai - City that never sleeps..."
+    </div> 
 </footer>
 
 </body>

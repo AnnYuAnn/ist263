@@ -37,13 +37,32 @@
         #intro{
             display: block;
         }
+
+        .homemain{
+            display:flex;
+            flex-wrap: nowrap;
+        }
+        
+        footer{
+            position: relative;
+            margin-top: 100px;
+        }
+
+
         @media only screen and (max-width: 600px){
         main img{
-             max-width: 600px;;
+             max-width: 450px;;
              display: block;
+             margin-right: auto;
+             margin-left: auto;
          }
+         .homemain{
+            display:flex;
+            flex-wrap: wrap;
+        }
      }
      </style>
+
      <script>
          function introOff(){
             document.getElementById('ecn').style.display = 'none';
@@ -52,6 +71,12 @@
          function introOn(){
             document.getElementById('ecn').style.display = 'block';
          }
+         function menuControl(){
+            document.getElementById('menu').style.display = 'none';
+            document.getElementById('collection').style.display = 'block';
+         }
+        
+   
      </script>
 </head>
 
@@ -60,7 +85,10 @@
      <!-- Skip to Content-->
      <a id="skip" href="#content" tabindex="1">Skip to Content</a>
 
+     <svg onclick = "menuControl();"  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" id="menu" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+
      <!-- Navigation-->
+<div id="collection">
   <nav>
      <a href="index.html" tabindex="2">Home</a>
      <span>|</span>
@@ -70,7 +98,11 @@
      <span>|</span>
      <a href="culturalheritage.html" tabindex="5">Cultural Heritage</a>
  </nav>
-    
+</div>
+
+
+
+
 <!-- Content-->
 <a id="content"></a>
 
@@ -89,13 +121,11 @@
 
 <!-- Footer-->
 <footer>
+    <div class="motto">
+        "Shanghai - City that never sleeps..."
+    </div>  
     &copy;&#50;&#48;&#50;&#49;
-    <p class="motto">
-    "Shanghai - City that never sleeps..."
-   </p>   
 </footer>
 
-
-    
 </body>
 </html>

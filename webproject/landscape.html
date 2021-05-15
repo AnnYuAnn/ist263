@@ -13,12 +13,7 @@
     #landscape{
         color: #01180E;
     }
-     body{
-        background-image: url('../webproject/media/Shanghai-scaled.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed; 
-        background-size: cover;
-     }
+    
      .landscape{
         width: 1300px;
         margin-top: 50px;
@@ -48,6 +43,10 @@
          font-size: 1.2em;
          font-family: 'Zilla Slab', serif;
      }
+     .description{
+        max-width: 500px;
+        font-family: 'Zilla Slab', serif;
+     }
      .moderntext{
          float: left;
          padding-left: 10px;
@@ -74,7 +73,7 @@
 
      @media only screen and (max-width: 600px){
         .landscape{
-            max-width: 600px;
+            max-width: 500px;
             margin-top: 50px;
             margin-bottom: 50px;
         }
@@ -83,15 +82,35 @@
             margin-left: 25px;
             margin-right: 25px;
         }
+        .picture{
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .description{
+            margin-left: 1%;
+            max-width: 550px;
+            font-size: 1em;
+        }
      }
      
 </style>
-<body>
+<script>
+    function menuControl(){
+            document.getElementById('menu').style.display = 'none';
+            document.getElementById('collection').style.display = 'block';
+         }
+</script>
+
+<body class="land">
     <!-- Skip to Content-->
     <a id="skip" href="#content" tabindex="1">Skip to Content</a>
 
+    <svg onclick = "menuControl();" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" id ="menu" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+
     <!-- Navigation-->
- <nav>
+ <div id ="collection">
+ <nav class>
     <a href="index.html" tabindex="2">Home</a>
     <span>|</span>
     <a href="landscape.html" tabindex="3">Landscape</a>
@@ -100,6 +119,8 @@
     <span>|</span>
     <a href="culturalheritage.html" tabindex="5">Cultural Heritage</a>
 </nav>
+ </div>
+
 
 <!-- Content-->
 <a id="content"></a>
@@ -107,8 +128,8 @@
 <div class="introcontainer">
 <h1 id="landscape">Landscape In Shanghai</h1>
 <!--Landscape Picture-->
-<h4>Ancient buildings with history and modern buildings rising from the ground carry the historical precipitation and contemporary technology of a city.
-</h4>
+<p class="description">Ancient buildings with history and modern buildings rising from the ground carry the historical precipitation and contemporary technology of a city.
+</p>
 </div>
 
 <!-- Main part -->
@@ -119,7 +140,7 @@
 <h3>Shanghai Tower</h3>
 <h4>Location:</h4>
 <p>No. 501, Yincheng Middle Road, Pudong New Area, Shanghai</p>
-<img src="../webproject/media/ShanghaiTowerFilled..png" alt="Shanghai Tower with Data">
+<img src="../webproject/media/ShanghaiTowerFilled..png" alt="Shanghai Tower with Data" class="picture">
 </div>
 
 
@@ -129,7 +150,7 @@
         <h4>Location:</h4>
         <p>No.701, Jinshang Road, Qingpu District, Shanghai</p>
         
-        <img src="../webproject/media/GrandParkFilled.png" alt="Grand Garden In Summer and Fall">
+        <img src="../webproject/media/GrandParkFilled.png" alt="Grand Garden In Summer and Fall" class="picture">
     
 </div>
 
@@ -158,10 +179,10 @@
 
 <!-- Footer-->
 <footer>
+    <div class="motto">
+        "Shanghai - City that never sleeps..."
+    </div>  
     &copy;&#50;&#48;&#50;&#49;
-    <p class="motto">
-    "Shanghai - City that never sleeps..."
-   </p>   
 </footer>
     
 </body>

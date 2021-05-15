@@ -5,9 +5,10 @@ h1
 }
 
 /* The motto */
-#motto
+.motto
 {
-    float:right;
+    display: inline-flexbox;
+    float: right;
 }
 
 /* Home main */
@@ -16,11 +17,7 @@ h1
     display:flexbox;
 }
 
-/* All the footer motto */
-footer p
-{
-    float: right;
-}
+
 
  /* Skip to Content*/
  #skip {
@@ -32,6 +29,42 @@ footer p
  #skip:focus{
      position: absolute;
      left: 10px;
+}
+
+.cultural{
+    max-width: 1200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    background-color: cornsilk; 
+}
+
+.land{
+    background-image: url('../webproject/media/Shanghai-scaled.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+ }
+
+ .food{
+    background-image: url('../webproject/media/shanghai_background.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    opacity: 0.9;
+ }   
+
+ #collection
+{   
+    display: none;
+}
+
+#menu
+{
+    max-width: 32px;
+    display: block;
 }
 
 @media only screen and (max-width: 600px){
